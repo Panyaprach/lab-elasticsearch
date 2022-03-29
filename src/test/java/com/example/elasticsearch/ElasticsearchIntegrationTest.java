@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @ExtendWith({ElasticsearchContainerExtension.class, TimingExtension.class})
 public class ElasticsearchIntegrationTest {
 
-    @TestRestClient
+    @TestRestHighLevelClient
     private RestHighLevelClient client;
 
     @Test
